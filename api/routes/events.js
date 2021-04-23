@@ -23,8 +23,8 @@ router.get('/previousEvents',(req,res,next)=>{
     Event
         .find()
         .where({ Status: 1 })
-        .select('_id Reward Time Winners')
-        .populate('Winners','name')
+        .select('_id Reward Time Winner')
+        .populate('Winner','name')
         .then(doc => {
             res.status(200).json(doc)
         })
@@ -83,12 +83,35 @@ router.patch('/addParticipant/:event_id',(req,res,next)=>{
             })
         }
         else{
-            res.status(200).json({
+            res.status(409).json({
                 message:'Already joined'
             })
         }
     })
 })
+
+function computeWinner(event_id){
+    Event.findById(event_id,function(err,event){
+        if(err){
+            console.log(err)
+            return;
+        }
+
+        const size = event.Participants.size;
+        var winner = event.Participants[Math.floor(Math.random()*size)]
+
+        event.Winner = winner
+
+        event.save().then(doc=>{
+            console.log('Winner Announced')
+            console.log(doc)
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+
+    })
+}
 
 
 module.exports = router;

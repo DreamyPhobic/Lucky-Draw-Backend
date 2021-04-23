@@ -6,7 +6,7 @@ const eventSchema = mongoose.Schema({
     Time: Number,
     Status: Number,
     Participants: [{type: mongoose.Schema.Types.ObjectId, ref:'User'}],
-    Winners: [{type: mongoose.Schema.Types.ObjectId, ref:'User'}]
+    Winner: {type: mongoose.Schema.Types.ObjectId, ref:'User'}
     
 });
 
