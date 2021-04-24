@@ -97,14 +97,14 @@ exports.computeWinner = (req, res, next) => {
         const size = event.Participants.size;
         var winner = event.Participants[Math.floor(Math.random() * size)]
 
-        event.Winner = winner
+        event.Winner.push(winner)
 
         event.save().then(doc => {
             console.log('Winner Announced')
             console.log(doc)
             return res.status(200).json({
                 messgae: 'Winner Computed',
-                result: doc
+                result: doc[0]
             })
         })
             .catch(err => {
