@@ -5,7 +5,7 @@ exports.nextEvents = (req, res, next) => {
     Event
         .find()
         .where({ Status: 0 })
-        .select('_id Reward Time')
+        .select('_id Reward Time Status')
         .then(doc => {
             res.status(200).json(doc)
         })
@@ -19,7 +19,7 @@ exports.previousEvents = (req, res, next) => {
     Event
         .find()
         .where({ Status: 1 })
-        .select('_id Reward Time Winner')
+        .select('_id Reward Time Winner Status')
         .populate('Winner', 'name')
         .then(doc => {
             res.status(200).json(doc)
