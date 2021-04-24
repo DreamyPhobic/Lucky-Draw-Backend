@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="loginSignup9colorPrimary">#fe5824</color>
+    <color name="loginSignup9colorPrimaryDark">#e94a18</color>
+    <color name="loginSignup9colorAccent">#fe5824</color>
+    <color name="loginSignup15text">#585858</color>
+
+    <color name="loginSignup2InputBg">#f1f5f8</color>
+    <color name="loginSignup1colorAccent">#fe5824</color>
+
+    <color name="button_orange">#fe5824</color>
+    <color name="button_white">@android:color/white</color>
+    <color name="button_blue">#40579b</color>
+    <color name="button_green">#43bd42</color>
+    <color name="button_gray">#f1f5f8</color>
+    <color name="button_magenta">#ea2064</color>
+    <color name="button_yellow">#ff9807</color>
+
+    <color name="activity13colorPrimary">#f44337</color>
+    <color name="activity13colorPrimaryDark">#d72d33</color>
+    <color name="activity13colorAccent">#f44337</color>
+
+    <color name="activity11fontGray">#bebebe</color>
+    <color name="profile16timeline">#d7d7d7</color>
+    <color name="profile16DotGreen">#96c06a</color>
+    <color name="profile16background">#f1f5f8</color>
+
+    <color name="button_red">#f94e57</color>
+</resources>
