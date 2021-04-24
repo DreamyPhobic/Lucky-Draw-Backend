@@ -1,5 +1,5 @@
 {
-  "name": "raffle",
+  "name": "lucky-draw-backend",
   "version": "1.0.0",
   "description": "allows users to get Lucky Draw Raffle tickets",
   "main": "index.js",
