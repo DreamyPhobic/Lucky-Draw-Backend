@@ -15,7 +15,7 @@ public class AppController extends Application {
     public static final String TAG = AppController.class
             .getSimpleName();
 
-    public static final String BASE_URL = "https://selective-oval-celsius.glitch.me";
+    public static final String BASE_URL = "https://lucky-draw-backend.glitch.me/";
 
     private RequestQueue mRequestQueue;
 
