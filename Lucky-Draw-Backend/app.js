@@ -37,8 +37,14 @@ app.use((req, res, next) => {
 });
 
 // Routes which should handle requests
+app.use('/',(req,res,next)=>{
+    res.status(200).json({
+        message: "Welcome to Lucky Draw REST API"
+    })
+})
 app.use('/users', usersRouter);
 app.use('/events', eventsRouter);
+
 
 app.use((req, res, next) => {
     const error = new Error('Not found');
