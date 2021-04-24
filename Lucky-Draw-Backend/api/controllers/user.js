@@ -30,7 +30,8 @@ exports.user_signup = (req, res, next) => {
                             .then(result => {
                                 console.log(result);
                                 res.status(201).json({
-                                    message: "User created"
+                                    message: "User created",
+                                    user: result
                                 });
                             })
                             .catch(err => {

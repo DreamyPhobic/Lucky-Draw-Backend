@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 
 const usersRouter = require('./api/routes/users');
 const eventsRouter = require('./api/routes/events')
+const base_url_router = require('./api/routes/base_url')
 
 mongoose.connect(
     'mongodb+srv://db_user:' +
@@ -37,14 +38,10 @@ app.use((req, res, next) => {
 });
 
 // Routes which should handle requests
-app.use('/',(req,res,next)=>{
-    res.status(200).json({
-        message: "Welcome to Lucky Draw REST API"
-    })
-})
+
 app.use('/users', usersRouter);
 app.use('/events', eventsRouter);
-
+app.use('/',base_url_router);
 
 app.use((req, res, next) => {
     const error = new Error('Not found');
