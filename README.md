@@ -1,5 +1,11 @@
+# Lucky-Draw-Gaming-Service
+It allows users to get Lucky Draw Raffle tickets and use one lucky draw raffle ticket to participate in a lucky draw game.
+
+## Architecture
+![architecture](https://user-images.githubusercontent.com/33078171/115989939-6cb42480-a5de-11eb-9d0b-35f1ae79a702.png)
+
 # Lucky-Draw-Backend
- A Backend service for lucky draw system
+ A Backend service for lucky draw gaming service.
  
  ### Base URL: https://lucky-draw-backend.glitch.me/
  
