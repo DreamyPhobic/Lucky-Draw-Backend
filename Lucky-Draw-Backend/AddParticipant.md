@@ -3,7 +3,7 @@
   It adds a participant in the given event.
 
 * **URL**  
-  `/users/addParticipant/{event_id}`
+  `/events/addParticipant/{event_id}`
 
 * **Method:**  
   `PATCH` 
