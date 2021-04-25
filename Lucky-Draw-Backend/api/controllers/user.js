@@ -4,6 +4,8 @@ const jwt = require("jsonwebtoken");
 
 const User = require("../models/user");
 
+
+// creates new user and returns the user object
 exports.user_signup = (req, res, next) => {
     User.find({ email: req.body.email })
         .exec()
@@ -46,6 +48,8 @@ exports.user_signup = (req, res, next) => {
         });
 };
 
+
+//logs in the user and generates a token which is used to authenticate the api requests
 exports.user_login = (req, res, next) => {
     User.find({ email: req.body.email })
         .exec()
@@ -92,6 +96,7 @@ exports.user_login = (req, res, next) => {
         });
 };
 
+//adds the given number of tickets to the user account
 exports.add_tickets = (req, res, next) => {
     const id = req.params.user_id;
     const tickets = req.body.tickets;

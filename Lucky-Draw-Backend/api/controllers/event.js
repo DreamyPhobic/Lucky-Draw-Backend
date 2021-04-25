@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const Event = require('../models/event');
 
+
+//gives a list of next(on-going) events
 exports.nextEvents = (req, res, next) => {
     Event
         .find()
@@ -15,6 +17,7 @@ exports.nextEvents = (req, res, next) => {
         })
 }
 
+//	gives a list of previous events with winner ids and names
 exports.previousEvents = (req, res, next) => {
     Event
         .find()
@@ -30,6 +33,8 @@ exports.previousEvents = (req, res, next) => {
         })
 }
 
+
+//creates new event and returns the event object
 exports.createEvent = (req, res, next) => {
     const event = new Event({
         _id: new mongoose.Types.ObjectId(),
@@ -53,6 +58,7 @@ exports.createEvent = (req, res, next) => {
         })
 }
 
+// adds a new participant in the given event
 exports.addParticipant = (req, res, next) => {
     const id = req.params.event_id;
     const participant_id = req.body.participant_id;
@@ -86,6 +92,7 @@ exports.addParticipant = (req, res, next) => {
     })
 }
 
+// randomly selects a winner from participants list and saves it for a given event.
 exports.computeWinner = (req, res, next) => {
     const event_id = req.params.event_id;
     Event.findById(event_id, function (err, event) {
