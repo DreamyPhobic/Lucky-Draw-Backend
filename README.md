@@ -21,3 +21,16 @@ email | test@example.com
 password | test
 
 ----
+
+## API Requests:
+
+Name | Description 
+--- | --- 
+[User Signup](Documentation/API%20Calls/UserSignup.md#user-signup) | creates new user and returns the user object
+[User Login](Documentation/API%20Calls/UserLogin.md#user-login) | logs in the user and generates a token which is used to authenticate the api requests
+[Add Tickets](Documentation/API%20Calls/AddTickets.md#add-tickets) | adds the given number of tickets to the user account
+[Create Event](Documentation/API%20Calls/CreateEvent.md#create-event) | creates new event and returns the event object
+[Add Participant](Documentation/API%20Calls/AddParticipant.md#add-participant) | adds a new participant in the given event
+[Next Events](Documentation/API%20Calls/NextEvents.md#next-events) | gives a list of next(on-going) events
+[Previous Events](Documentation/API%20Calls/PreviousEvents.md#previous-events) | gives a list of previous events with winner ids and names
+[Compute Winner](Documentation/API%20Calls/ComputeWinner.md#compute-winner) | randomly selects a winner from participants list and saves it for a given event.
