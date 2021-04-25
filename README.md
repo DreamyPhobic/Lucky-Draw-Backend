@@ -78,6 +78,6 @@ MongoDB Atlas(DaaS) is used for database. It stores all the information about us
  A mobile client app for lucky draw gaming service.
  
  ## Screenshots
- <img src="https://user-images.githubusercontent.com/33078171/115990843-1e555480-a5e3-11eb-9e7a-f20502c48d87.jpeg" width="220">             <img src="https://user-images.githubusercontent.com/33078171/115990848-257c6280-a5e3-11eb-87f2-d20618b6d5d6.jpeg" width="220">   <img src="https://user-images.githubusercontent.com/33078171/115991080-59a45300-a5e4-11eb-99ce-42fbd9a3733b.jpeg" width="220"> <img src="https://user-images.githubusercontent.com/33078171/115991081-5c9f4380-a5e4-11eb-88ec-3a1ab9df2fd2.jpeg" width="220">
+ <img src="/Documentation/Screenshots/s1.jpeg" width="220"> <img src="/Documentation/Screenshots/s2.jpeg" width="220">   <img src="/Documentation/Screenshots/s3.jpeg" width="220"> <img src="/Documentation/Screenshots/s4.jpeg" width="220">
 
 
