@@ -91,7 +91,7 @@ exports.computeWinner = (req, res, next) => {
     Event.findById(event_id, function (err, event) {
         if (err) {
             console.log(err)
-            return res.status(404).json({ error: err })
+            return res.status(404).json({ error: "Event doesn't exist" })
         }
 
         const size = event.Participants.length;
