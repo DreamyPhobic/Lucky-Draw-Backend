@@ -4,8 +4,8 @@ It allows users to get Lucky Draw Raffle tickets and use one lucky draw raffle t
 ## Architecture
 ![architecture](https://user-images.githubusercontent.com/33078171/115989939-6cb42480-a5de-11eb-9d0b-35f1ae79a702.png)
 
-# Lucky-Draw-Backend
- A Backend service for lucky draw gaming service.
+# [Lucky-Draw-Backend](Lucky-Draw-Backend)
+ A Backend server made with NodeJs for lucky draw gaming service.
  
  ### Base URL: https://lucky-draw-backend.glitch.me/
  
@@ -46,7 +46,7 @@ Name | Description
 ## Database:
 MongoDB Atlas(DaaS) is used for database. It stores all the information about users and events.
 
-* ### User Schema:
+* ### [User Schema](/Lucky-Draw-Backend/api/models/user.js):
  ```javascript
  {
     _id: {type: ObjectId},
@@ -61,7 +61,7 @@ MongoDB Atlas(DaaS) is used for database. It stores all the information about us
     tickets: { type: Number, default: 0 }
 } 
  ```
-* ### Event Schema:
+* ### [Event Schema](/Lucky-Draw-Backend/api/models/event.js):
 ```javascript
 {
     _id: {type: ObjectId},
@@ -73,3 +73,11 @@ MongoDB Atlas(DaaS) is used for database. It stores all the information about us
 
 }
 ```
+
+# [Lucky-Draw-Android-App](Lucky-Draw-Android-App)
+ A mobile client app for lucky draw gaming service.
+ 
+ ## Screenshots
+ <img src="https://user-images.githubusercontent.com/33078171/115990843-1e555480-a5e3-11eb-9e7a-f20502c48d87.jpeg" width="220">             <img src="https://user-images.githubusercontent.com/33078171/115990848-257c6280-a5e3-11eb-87f2-d20618b6d5d6.jpeg" width="220">   <img src="https://user-images.githubusercontent.com/33078171/115991080-59a45300-a5e4-11eb-99ce-42fbd9a3733b.jpeg" width="220"> <img src="https://user-images.githubusercontent.com/33078171/115991081-5c9f4380-a5e4-11eb-88ec-3a1ab9df2fd2.jpeg" width="220">
+
+
