@@ -12,10 +12,14 @@ It allows users to get Lucky Draw Raffle tickets and use one lucky draw raffle t
  ----
  ## For Testing purposes:
  
-* **User token:**  (valid til June 26, 2024 4:38:42 AM (GMT))
+* ### User token:  
+  `(valid til June 26, 2024 4:38:42 AM (GMT))`
+  
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJuYW1lIjoiVGVzdCB1c2VyIiwiaWF0IjoxNjE5MjczMTIyLCJleHAiOjE3MTkzNzY3MjJ9.EX7GdBF4l8ENndXtOJqI6Vrr4VmRNChDAHZ2ZxHBPZY
  
-* **Admin token:** (valid til June 26, 2024 4:38:42 AM (GMT))
+* ### Admin token:
+  `(valid til June 26, 2024 4:38:42 AM (GMT))`
+
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJuYW1lIjoiQWRtaW4iLCJpYXQiOjE2MTkyNzMxMjIsImV4cCI6MTcxOTM3NjcyMn0.WBCLicO9YUsokHYPy8odGZGcEv0N1r9p6hcOmS61hXo
 
 * ### Testing Credentials:
