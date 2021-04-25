@@ -3,7 +3,7 @@
   It creates new event and returns the event object.
 
 * **URL**  
-  `/users/createEvent`
+  `/events/createEvent`
 
 * **Method:**  
   `POST` 
