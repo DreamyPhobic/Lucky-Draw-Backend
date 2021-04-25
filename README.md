@@ -1,5 +1,5 @@
 # Lucky-Draw-Backend
- A Backend for lucky draw system
+ A Backend service for lucky draw system
  
  ### Base URL: https://lucky-draw-backend.glitch.me/
  
